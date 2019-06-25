@@ -1,5 +1,5 @@
 <?php
-class autoload
+class Autoload
 {
     public function autoloader_core($file_name)
     {

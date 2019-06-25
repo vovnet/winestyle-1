@@ -1,16 +1,12 @@
 <?php
+
 class Model
 {
-
-    public function autoload_class($class_name)
-    {
-            require_once $class_name.'.php';
-    }
+public $db;
 
     public function __construct()
        {
-           $this->autoload_class('DB');
-           DB::getInstance();
+           $this->db = DB::getInstance();
        }
     /*
         Модель обычно включает методы выборки данных, это могут быть:

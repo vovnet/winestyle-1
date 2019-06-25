@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<title>БИР</title>
+		<title><?=SITE_NAME?></title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	</head>
    <div class="header">

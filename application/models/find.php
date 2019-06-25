@@ -4,7 +4,6 @@ class Model_Find extends Model
 
     public $errors = [];
     public $input_data = [];
-
     public function __construct()
     {
         parent::__construct();
@@ -21,9 +20,9 @@ class Model_Find extends Model
         $this->verificationData();
         if(count($this->errors)==0)
         {
-            $sql = "SELECT * FROM table_name1";
-            $result = DB::query($sql);
-            $data = DB::fetch_array($result);
+            $sql = "SELECT * FROM workers";
+            $object_pdo = $this->db->query($sql);
+            $data = $object_pdo->fetchAll();
             return $data;
         }
     }

@@ -10,8 +10,8 @@ class Find extends Controller
 
     function action_index()
     {
-       // $data = $this->model->getData();
-        $errors = $this->model->errors;
+        $data = $this->model->getData();
+        $errors = '';// $this->model->errors;
         $data1 = '';
         $data2 = '';
         $this->view->generate('find_view.php','template_view.php',$data, $data1, $data2);
