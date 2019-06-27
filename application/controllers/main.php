@@ -8,12 +8,17 @@ class Main extends Controller
         $this->view = new View();
     }
 
-
-    function action_index()
+    public function action_index()
     {
-        $input = $this->model->getNamePageInput();
-        $find = $this->model->getNamePageFind();
-        $this->view->generate('main_view.php', 'template_view.php', $input, $find);
+        $this->view->generate('main_view.php','template_view.php','', '', '');
     }
+    public function action_getEmployees()
+    {
+        $data = $this->model->getEmployees();
+        $errors = '';// $this->model->errors;
+        $data1 = '';
+        $data2 = '';
+        $this->view->generate('employees_view.php','template_view.php',$data, $data1, $data2);
+    }
+
 }
-?>

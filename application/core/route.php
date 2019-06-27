@@ -11,23 +11,21 @@ class Route
 
     static function startRouting()
     {
-        // контроллер и действие по умолчанию
-
-            $controller_name = 'find';
-            $routes = explode('/', $_SERVER['REQUEST_URI']);
-
+        // контроллер и экшн по умолчанию
+        $controller_name = 'main';
         $action_name = 'index';
 
+        $url = $_GET['url'];
+        $url = rtrim($url, '/');
+        $routes = explode('/', $url);
 
-        // получаем имя контроллера
-        if (!empty($routes[1])) {
-            $controller_name = $routes[1];
+
+        if (!empty($routes[0])) {
+            $controller_name = $routes[0];
         }
 
-        // получаем имя экшена
-        if (!empty($routes[2])) {
-            $action_name = preg_split('/[?]/',$routes[2]);
-            $action_name = $action_name[0];
+        if (!empty($routes[1])) {
+            $action_name = $routes[1];
         }
 
         // добавляем префиксы

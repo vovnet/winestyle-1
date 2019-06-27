@@ -1,0 +1,40 @@
+.footer-bottom
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25px;
+    background-color: #dfe4e8;
+}
+.photo
+{
+    max-width: 200px;
+    max-height: 200px;
+    cursor: pointer;
+}
+
+/*стили на увеличение изображения*/
+.popup {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+.popup_bg {
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    z-index:1;
+    height:100%;
+    width:100%;
+}
+.popup_img {
+    position: relative;
+    margin: 10% auto;
+    z-index: 2;
+    width: 450px;
+    height: 450px;
+}
