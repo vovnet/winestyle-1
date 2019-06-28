@@ -28,10 +28,10 @@
                     <a class="nav-link" href="<?=SITE_ROOT?>main/addemployees">Добавить сотрудника</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Курс доллара</a>
+                    <a class="nav-link" href="<?=SITE_ROOT?>main/givepremium">Выдать премию</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Выдать премию</a>
+                    <a class="nav-link" href="<?=SITE_ROOT?>main/exchangerate"">Курс доллара</a>
                 </li>
             </ul>
         </div>
@@ -45,7 +45,7 @@
     ?>
     </div>
     <div class="text-center footer-bottom">
-        Footer
+        Футер
     </div>
 
 
